@@ -1,5 +1,5 @@
 {
-    "name": "express-http-autodetect",
+    "name": "express-autoserve",
     "description": "Automatically support different Express app deployment strategies such as FastCGI, Passenger, and node http.",
     "version": "0.0.2-pre",
     "license": "MIT",

@@ -1,14 +1,14 @@
 This module is being renamed to [express-autoserve](https://npmjs.com/package/express-autoserve).
 
-[Autodetect the server platform](https://github.com/binki/autoserve) and delegate to an
+[Autodetect the service platform](https://github.com/binki/autoserve) and delegate to an
 Express app.
 
 # Usage
 
-    const expressHttpAutodetect = require('express-http-autodetect');
+    const expressAutoserve = require('express-autoserve');
     const app = require('./app');
     
-    expressHttpAutodetect(app);
+    expressAutoserve(app);
 
 # Mechanics
 
@@ -18,9 +18,9 @@ The node [`http`](https://nodejs.org/api/http.html) module has no
 concept of `baseUrl` because it assumes it will get to open the TCP
 socket itself and just serve out pages at `/`. However, various
 deployment strategies supported by
-[`http-autodetect`](https://github.com/binki/http-autodetect) are
+[`autoserve`](https://github.com/binki/autoserve) are
 commonly used to deploy applications at URIs other than `/`. Thus
-`http-autodetect` provides a `getBaseUrl(req)` function to discover
+`autoserve` provides a `getBaseUrl(req)` function to discover
 the baseUrl for the current request (in FastCGI, the necessary
 information is not available until a request is received).
 
@@ -48,6 +48,6 @@ property. This enables the following to work sensibly:
 
 This module ensures that the passed app is treated like it is mounted
 in an express app at the `baseUrl` calculated by
-`http-autodetect`. This causes the `baseUrl` to be set properly for
+`autoserve`. This causes the `baseUrl` to be set properly for
 the passed app and ensures that routing is performed relative to the
 deployment `baseUrl`.

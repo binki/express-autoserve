@@ -2,7 +2,7 @@
 'use strict';
 
 var express = require('express');
-var httpAutodetect = require('http-autodetect');
+var httpAutodetect = require('autoserve');
 
 module.exports = function (app) {
     var mountApp = express();

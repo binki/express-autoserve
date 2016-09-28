@@ -1,5 +1,6 @@
-[Autodetect the `http` module
-source](https://github.com/binki/http-autodetect) and delegate to a
+This module is being renamed to [express-autoserve](https://npmjs.com/package/express-autoserve).
+
+[Autodetect the server platform](https://github.com/binki/autoserve) and delegate to an
 Express app.
 
 # Usage

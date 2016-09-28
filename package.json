@@ -1,7 +1,7 @@
 {
     "name": "express-http-autodetect",
     "description": "Automatically support different Express app deployment strategies such as FastCGI, Passenger, and node http.",
-    "version": "0.0.1-pre0",
+    "version": "0.0.1",
     "license": "MIT",
     "repository": "https://github.com/binki/express-http-autodetect",
     "dependencies": {

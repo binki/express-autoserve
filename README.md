@@ -1,5 +1,3 @@
-This module is being renamed to [express-autoserve](https://npmjs.com/package/express-autoserve).
-
 [Autodetect the service platform](https://github.com/binki/autoserve) and delegate to an
 Express app.
 
